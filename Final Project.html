@@ -951,6 +951,10 @@
 
 
         function register(u, p) {
+            if (u == "" || p == "") {
+                showMsgRegister("please fill out all fields");
+                return;
+            }
             currUser = createUser(u, p);
             document.querySelector("#register-form").style.display = "none";
             document.querySelector("#user-login").value = u;
@@ -992,13 +996,15 @@
                 document.querySelector("#register-form").style.display = "inline-block";
             }
         };
-        function unregister() {
-			localStorage.removeItem(`u${username}`);
-			localStorage.removeItem("username");
-			localStorage.removeItem("password");
-			localStorage.removeItem("loginSuccessful");
-			window.location.reload();
-        }
+    function unregister() {
+        const users = getUsersFromStorage();
+        localStorage.setItem("users", JSON.stringify(Array.from(users.entries())));
+        localStorage.removeItem("currentUser");
+        localStorage.removeItem("loginSuccessful");
+        username = "";
+        document.querySelector("#menu").style.display = "none";
+        document.querySelector("#register-form").style.display = "inline-block";
+    }
         function logout() {
             showMsgLogin("logging out");
             localStorage.removeItem("loginSuccessful");
@@ -1094,7 +1100,6 @@
 
     function getUsersFromStorage() {
         const parsedArray = JSON.parse(localStorage.getItem("users"));
-        console.log("parsed array", parsedArray);
         return new Map(parsedArray);
     }
 
