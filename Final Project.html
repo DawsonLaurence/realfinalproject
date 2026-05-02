@@ -9,7 +9,7 @@
             display: flex;
             flex-direction: column;
             font-family: sans-serif;
-			background-color: #2f2f2f;
+            background-color: #2f2f2f;
         }
 
         #register-form {
@@ -86,34 +86,34 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-			margin-top:10px
+            margin-top: 10px
         }
-		
-		.menu-main {
-    margin-bottom: 1.5rem;
-}
 
-.menu-secondary {
-    background-color: #333;
-    padding: 1rem;
-    border-radius: 10px;
-}
+        .menu-main {
+            margin-bottom: 1.5rem;
+        }
 
-.menu-secondary button {
-    background: #ff6b6b;
-    color: white;
-}
+        .menu-secondary {
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 10px;
+        }
 
-.menu-secondary button:hover {
-    background: #ff9b9b;
-}
+            .menu-secondary button {
+                background: #ff6b6b;
+                color: white;
+            }
 
-		#content {
-			width: auto;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
+                .menu-secondary button:hover {
+                    background: #ff9b9b;
+                }
+
+        #content {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         #cookingHeader {
             background-color: #464646;
@@ -309,67 +309,70 @@
         #cooking, #combat, #shrines, #final, #divine, #notes, .view {
             display: none;
         }
+
         #returnMenu {
             display: none;
             padding: 20px;
-		    margin-top: 10px;
+            margin-top: 10px;
         }
-#notesHeader {
-    background-color: #464646;
-    padding: 2rem;
-    text-align: center;
-    color: #d7fff4;
-    letter-spacing: 2px;
-}
 
-#notesWrapper {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-}
+        #notesHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
 
-#notesCard {
-    background-color: #464646;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 600px;
-    max-width: 90%;
-    margin-bottom: 2rem;
-    color: #d7fff4;
-}
+        #notesWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
 
-#notesFooter {
-    background-color: #464646;
-    text-align: center;
-    padding: 1rem;
-    color: #d7fff4;
-}
+        #notesCard {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
 
-#pagekey {
-    width: 60%;
-    padding: 8px;
-    border-radius: 6px;
-    border: none;
-    background: #0e4b47;
-    color: #d7fff4;
-    margin-right: 0.5rem;
-}
+        #notesFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
 
-#Thing6 button {
-    margin-top: 0.5rem;
-}
+        #pagekey {
+            width: 60%;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            background: #0e4b47;
+            color: #d7fff4;
+            margin-right: 0.5rem;
+        }
 
-#Thing6 > div {
-    margin-bottom: 1rem;
-}
-#returnMenu {
-    display: none;
-    padding: 20px;
-    margin-top: 10px;
-    text-align: center;
-}
+        #Thing6 button {
+            margin-top: 0.5rem;
+        }
+
+        #Thing6 > div {
+            margin-bottom: 1rem;
+        }
+
+        #returnMenu {
+            display: none;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -387,57 +390,57 @@
             <input id="user-login" placeholder="Traveler Name" required>
             <input id="pass-login" type="password" placeholder="Sheikah Slate Key" required>
             <button type="submit">Enter Hyrule</button>
-			<button onclick="ermRegister()"> Register Here </button>
+            <button onclick="ermRegister()"> Register Here </button>
             <div class="msg-login" id="msg-login"></div>
         </form>
         <div id="menu" class="menu">
-			<h1> Welcome to Hyrule! </h1>
-			<h4> Please pick which topic you wish to learn about! </h4>
-				<div class="menu-main">
-					<ul>
-						<li><button onclick="show('#cooking');"> Cooking </button></li>
-						<li><button onclick="show('#combat');"> Combat </button></li>
-						<li><button onclick="show('#divine');"> Divine beasts </button></li>
-						<li><button onclick="show('#shrines');"> Shrines </button></li>
-						<li><button onclick="show('#final');"> Final Battle </button></li>
-						<li><button onclick="show('#notes');"> Notes </button></li>
-					</ul>
-				</div>
-			<div class="menu-secondary">
-				<ul>
-					<li><button onclick="logout();"> Logout </button></li>
-					<li><button onclick="unregister();"> Unregister </button></li>
-				</ul>
-			</div>
-		</div>
+            <h1> Welcome to Hyrule! </h1>
+            <h4> Please pick which topic you wish to learn about! </h4>
+            <div class="menu-main">
+                <ul>
+                    <li><button onclick="show('#cooking');"> Cooking </button></li>
+                    <li><button onclick="show('#combat');"> Combat </button></li>
+                    <li><button onclick="show('#divine');"> Divine beasts </button></li>
+                    <li><button onclick="show('#shrines');"> Shrines </button></li>
+                    <li><button onclick="show('#final');"> Final Battle </button></li>
+                    <li><button onclick="show('#notes');"> Notes </button></li>
+                </ul>
+            </div>
+            <div class="menu-secondary">
+                <ul>
+                    <li><button onclick="logout();"> Logout </button></li>
+                    <li><button onclick="unregister();"> Unregister </button></li>
+                </ul>
+            </div>
+        </div>
     </div>
-	    <div id="content">
-			<div id="returnMenu">
-				<button onclick="showMenu()">Return To Menu</button>
-			</div>
-				<div id="notes" class="view">
-					<header id="notesHeader">
-						<h1>Breath of the Wild Guide</h1>
-						<p>Traveler’s Notes</p>
-					</header>
+    <div id="content">
+        <div id="returnMenu">
+            <button onclick="showMenu()">Return To Menu</button>
+        </div>
+        <div id="notes" class="view">
+            <header id="notesHeader">
+                <h1>Breath of the Wild Guide</h1>
+                <p>Traveler’s Notes</p>
+            </header>
 
-					<div id="notesWrapper">
-						<div id="notesCard">
-							<h2>Your Notes</h2>
-							<div>
-								<input id="pagekey" placeholder="Enter page name...">
-								<button onclick="diffPage()">Load Page</button>
-							</div>
-								<textarea id="addLine" rows="12" placeholder="Write your notes here..."></textarea>
-								<button onclick="savePage()">Save Notes</button>
-							<div id="newPage"></div>
-						</div>
-					</div>
+            <div id="notesWrapper">
+                <div id="notesCard">
+                    <h2>Your Notes</h2>
+                    <div>
+                        <input id="pagekey" placeholder="Enter page name...">
+                        <button onclick="diffPage()">Load Page</button>
+                    </div>
+                    <textarea id="addLine" rows="12" placeholder="Write your notes here..."></textarea>
+                    <button onclick="savePage()">Save Notes</button>
+                    <div id="newPage"></div>
+                </div>
+            </div>
 
-    <footer id="notesFooter">
-        <p>Custom Notes Section</p>
-    </footer>
-</div>
+            <footer id="notesFooter">
+                <p>Custom Notes Section</p>
+            </footer>
+        </div>
         <div id="cooking" class="view">
             <header id="cookingHeader">
                 <h1>Breath of the Wild Guide</h1>
@@ -803,7 +806,7 @@
             </footer>
         </div>
         <div id="final" class="view">
-		
+
             <header id="ganonHeader">
                 <h1>Breath of the Wild Guide</h1>
                 <p>Page 5 — Hyrule Castle & Final Battle</p>
@@ -888,10 +891,10 @@
                 <p>Page 5 of the Breath of the Wild Strategy Guide</p>
             </footer>
         </div>
-	</div>
-    <script> 
-		let username = "";
-		let password = "";
+    </div>
+    <script>
+        let username = "";
+
         function show(x) {
             hide();
             document.querySelector(x).style.display = "block";
@@ -914,11 +917,11 @@
         }
         function ermLogin() {
             document.querySelector("#register-form").style.display = "none";
-            document.querySelector("#login-form").style.display = "inline-block";           
+            document.querySelector("#login-form").style.display = "inline-block";
         }
 		function ermRegister() {
             document.querySelector("#register-form").style.display = "inline-block";
-            document.querySelector("#login-form").style.display = "none";           
+            document.querySelector("#login-form").style.display = "none";
         }
         function showMsgRegister(m) {
             const msg = document.getElementById("msg-register");
@@ -928,38 +931,37 @@
             const msg = document.getElementById("msg-login");
             msg.textContent = m;
         }
+
+
         function login(x, y) {
-            const k = `u${x}`
-            let v1 = localStorage.getItem(k);
-            let xObject = JSON.parse(v1)
-			    if (!v1) {
-					showMsgLogin("Traveler not found. Please register first.");
-					return;
-				}
-            if (y === xObject.password) {
+
+
+            const validUser = readUserFromStorage(x);
+            if (validUser && validUser.password === y) {
                 document.querySelector("#login-form").style.display = "none";
                 document.querySelector("#menu").style.display = "inline-block";
                 localStorage.setItem("loginSuccessful", true);
-				username = document.querySelector("#user-login").value;
+                localStorage.setItem("currentUser", document.querySelector("#user-login").value);
+                username = document.querySelector("#user-login").value;
 				password = document.querySelector("#pass-login").value;
             } else {
-                showMsgLogin("Sheikah Slate denied. Please enter the correct password.");
+                showMsgLogin("invalid credentials");
             }
         }
+
+
         function register(u, p) {
-            let k = `u${u}`
-            console.log("SUPERTONES SAYS K is ", k);
-            let v = {
-                username: u,
-                password: p,
-            }
-            localStorage.setItem(k, JSON.stringify(v));
-            showMsgRegister("Sheikah Slate added. Please login with your new password. ");
+            currUser = createUser(u, p);
+            document.querySelector("#register-form").style.display = "none";
+            document.querySelector("#user-login").value = u;
+            document.querySelector("#pass-login").value = p;
+            login(u,p);
         }
+
+
         const form1 = document.getElementById("login-form");
         const form2 = document.getElementById("register-form");
         form1.addEventListener("submit", function (event) {
-            const form1 = document.getElementById("login-form");
             event.preventDefault(); // Prevents the page from reloading
             const x = document.querySelector("#user-login").value;
             const y = document.querySelector("#pass-login").value;
@@ -968,18 +970,14 @@
 		form2.addEventListener("submit", function (event) {
 			event.preventDefault();
 
-			username = document.querySelector("#user-register").value;
-			password = document.querySelector("#pass-register").value;
-
-			localStorage.setItem("username", username);
-			localStorage.setItem("password", password);
-
-			register(username, password);
+			let createdUsername = document.querySelector("#user-register").value;
+            let createdPassword = document.querySelector("#pass-register").value;
+			register(createdUsername, createdPassword);
 		});
         window.onload = function () {
-			username = localStorage.getItem("username") || "";
-			password = localStorage.getItem("password") || "";
-            if (username && password) {
+            username = localStorage.getItem("currentUser") || "";
+
+            if (getUsersFromStorage().size > 0) {
                 if (localStorage.getItem("loginSuccessful")) {
                     document.querySelector("#login-form").style.display = "none";
                     document.querySelector("#menu").style.display = "inline-block";
@@ -1011,10 +1009,11 @@
             console.log("LOADING PAGE", phash);
             if (phash) {
                 if (phash[0] === "#") {
-                    phash = decodeURIComponent(phash.slice(1)); // i did have to look this up, because i had no idea what to do to fix a problem i hads
+                    phash = decodeURIComponent(phash.slice(1)); // i did have to look this up, because i had no idea what to do to fix a problem i had
                 }
-               let pagecontents = localStorage.getItem(username + "content" + phash);
-                if (pagecontents === null) {
+               let user = readUserFromStorage(username);
+               let pagecontents = user.notes.get(phash);
+                if (pagecontents === null || undefined) {
                     pagecontents = "";
                 }
                 let pageview = document.querySelector("#newPage");
@@ -1032,16 +1031,17 @@
 			if (!a) {
 				c = prompt("just confirming you want to do this, as saving a page with nothing on it will erase your page. Type yes if you do, no if you don't");
 				if (c == "yes") {
-					let user = username;
-					localStorage.setItem(user + "content" + b, a);
-					localStorage.setItem("firstUser", user)
+					let user = readUserFromStorage(username);
+                    user.notes.set(b, a);
+                    saveUser(user);
 					document.querySelector("#newPage").innerHTML = a;
 				} else {
 					return;
 				}
-			}	
-			let user = username;
-			localStorage.setItem(user + "content" + b, a);
+			}
+            let user = readUserFromStorage(username);
+            user.notes.set(b, a);
+            saveUser(user);
 			document.querySelector("#newPage").innerHTML = a;
         }
 
@@ -1049,17 +1049,73 @@
             let b = document.querySelector("#pagekey").value.replace("#","");
             window.location.hash = b;
             phash = b;
-            let user = username;
-			let content = localStorage.getItem(user + "content" + b);
-            if (content === null) {
+            let user = readUserFromStorage(username);
+            let content = user.notes.get(b);
+            if (content === null || content === undefined) {
                 content = "";
             }
+            console.log(user.notes);
+            console.log(content);
             document.querySelector("#newPage").innerHTML = content;
             document.querySelector("#addLine").value = content;
             loadPage();
         }
-
         window.addEventListener("load", loadPage);
+
+
+    function readUserFromStorage(user) {
+
+        const currUser = loadUser(user);
+
+        if(!currUser)
+            return null;
+
+        if (currUser.notes){
+            currUser.notes = new Map(currUser.notes);
+        }else{
+            currUser.notes = new Map();
+        }
+        return currUser;
+    }
+
+
+    function createUser(username, password) {
+        const user = {
+            username: username,
+            password: password,
+            notes: new Map()
+        };
+
+        saveUser(user);
+
+        return user;
+    }
+
+
+    function getUsersFromStorage() {
+        const parsedArray = JSON.parse(localStorage.getItem("users"));
+        console.log("parsed array", parsedArray);
+        return new Map(parsedArray);
+    }
+
+    function loadUser(username) {
+        const storedUsers = getUsersFromStorage();
+        return storedUsers.get(username);
+    }
+
+    function saveUser(user) {
+        const userCopy = { ...user };
+        users = getUsersFromStorage();
+
+        userCopy.notes = Array.from(user.notes.entries());
+
+        users.set(user.username, userCopy);
+
+        localStorage.setItem("users", JSON.stringify(Array.from(users.entries())));
+    }
+
+
+
     </script>
 </body>
 </html>
