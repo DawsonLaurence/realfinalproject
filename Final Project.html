@@ -955,6 +955,10 @@
                 showMsgRegister("please fill out all fields");
                 return;
             }
+            if (getUsersFromStorage().has(u)) {
+                showMsgRegister("username already exists");
+                return;
+            }
             currUser = createUser(u, p);
             document.querySelector("#register-form").style.display = "none";
             document.querySelector("#user-login").value = u;
