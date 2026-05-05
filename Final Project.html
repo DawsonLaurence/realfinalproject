@@ -934,8 +934,6 @@
 
 
         function login(x, y) {
-
-
             const validUser = readUserFromStorage(x);
             if (validUser && validUser.password === y) {
                 document.querySelector("#login-form").style.display = "none";
@@ -1072,11 +1070,8 @@
         }
         window.addEventListener("load", loadPage);
 
-
     function readUserFromStorage(user) {
-
         const currUser = loadUser(user);
-
         if(!currUser)
             return null;
 
@@ -1087,8 +1082,6 @@
         }
         return currUser;
     }
-
-
     function createUser(username, password) {
         const user = {
             username: username,
@@ -1100,31 +1093,21 @@
 
         return user;
     }
-
-
     function getUsersFromStorage() {
         const parsedArray = JSON.parse(localStorage.getItem("users"));
         return new Map(parsedArray);
     }
-
     function loadUser(username) {
         const storedUsers = getUsersFromStorage();
         return storedUsers.get(username);
     }
-
     function saveUser(user) {
-        const userCopy = { ...user };
-        users = getUsersFromStorage();
-
+        const userCopy = user;
+        let users = getUsersFromStorage();
         userCopy.notes = Array.from(user.notes.entries());
-
         users.set(user.username, userCopy);
-
         localStorage.setItem("users", JSON.stringify(Array.from(users.entries())));
     }
-
-
-
     </script>
 </body>
 </html>
