@@ -1,0 +1,366 @@
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            font-family: sans-serif;
+            background-color: #2f2f2f;
+        }
+
+        #register-form {
+            background-color: #464646;
+            align-items: center;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            display: none;
+            color: #d7fff4;
+        }
+
+        #login-form {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 280px;
+            text-align: center;
+            display: none;
+            align-items: center;
+            color: #d7fff4;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 6px;
+            background: #0e4b47;
+            color: #d7fff4;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 1rem;
+            background: #2fffd5;
+            color: #003330;
+            font: bold;
+        }
+
+            button:hover {
+                background: #8ffff0;
+            }
+
+        .msg {
+            font-size: 0.85rem;
+            color: #ffbdbd;
+        }
+
+        #menu {
+            background-color: #464646;
+            color: #d7fff4;
+            border-radius: 12px;
+            padding: 2rem;
+            width: 320px;
+            max-width: 90%;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            margin-bottom: 2rem;
+            display: none;
+        }
+
+        #menus {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px
+        }
+
+        .menu-main {
+            margin-bottom: 1.5rem;
+        }
+
+        .menu-secondary {
+            background-color: #333;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+            .menu-secondary button {
+                background: #ff6b6b;
+                color: white;
+            }
+
+                .menu-secondary button:hover {
+                    background: #ff9b9b;
+                }
+
+        #content {
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #cookingHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #cookingWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #cookingIntro,
+        #healingMeals,
+        #buffMeals,
+        #resistanceMeals,
+        #elixirsdiv,
+        #advancedCooking,
+        #ingredientTips {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
+
+        #cookingFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #combatHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #combatWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #combatCard1,
+        #combatCard2,
+        #combatCard3,
+        #combatCard4,
+        #combatCard5 {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
+
+        #combatFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #beastHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #beastWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #beastIntro,
+        #rutadiv,
+        #rudaniadiv,
+        #medohdiv,
+        #naborisdiv,
+        #blightBosses {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
+
+        #beastFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #shrineHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #shrineWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #shrineIntro,
+        #puzzleShrines,
+        #combatShrines,
+        #blessingShrines,
+        #apparatusShrines,
+        #shrineRewards,
+        #advancedStrategies {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+            margin-top: 2rem;
+        }
+
+        #shrineFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #ganonHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #ganonWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #castlediv,
+        #preparationdiv,
+        #calamitydiv,
+        #darkBeastdiv,
+        #completiondiv {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
+
+        #ganonFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #cooking, #combat, #shrines, #final, #divine, #notes, .view {
+            display: none;
+        }
+
+        #returnMenu {
+            display: none;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        #notesHeader {
+            background-color: #464646;
+            padding: 2rem;
+            text-align: center;
+            color: #d7fff4;
+            letter-spacing: 2px;
+        }
+
+        #notesWrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #notesCard {
+            background-color: #464646;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 600px;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            color: #d7fff4;
+        }
+
+        #notesFooter {
+            background-color: #464646;
+            text-align: center;
+            padding: 1rem;
+            color: #d7fff4;
+        }
+
+        #pagekey {
+            width: 60%;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+            background: #0e4b47;
+            color: #d7fff4;
+            margin-right: 0.5rem;
+        }
+
+        #Thing6 button {
+            margin-top: 0.5rem;
+        }
+
+        #returnMenu {
+            display: none;
+            padding: 20px;
+            margin-top: 10px;
+            text-align: center;
+        }
